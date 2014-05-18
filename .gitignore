@@ -1,0 +1,13 @@
+# Mac noise
+.DS_Store
+
+#eclipserelated
+local.properties
+*.pydevproject
+.project
+.metadata
+ant-build/**/*
+ant-gen/**/*
+local.properties
+build/**/*
+

@@ -1,0 +1,89 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'ios-deploy' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'ios-deploy', null ]
+5 verbose cache add name=undefined spec="ios-deploy" args=["ios-deploy",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'ios-deploy',
+6 verbose parsed url   path: 'ios-deploy',
+6 verbose parsed url   href: 'ios-deploy' }
+7 silly lockFile 69149c11-ios-deploy ios-deploy
+8 verbose lock ios-deploy /Users/japonte/.npm/69149c11-ios-deploy.lock
+9 silly lockFile 69149c11-ios-deploy ios-deploy
+10 silly lockFile 69149c11-ios-deploy ios-deploy
+11 verbose addNamed [ 'ios-deploy', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+14 verbose lock ios-deploy@ /Users/japonte/.npm/9c508a6b-ios-deploy.lock
+15 silly addNameRange { name: 'ios-deploy', range: '*', hasData: false }
+16 verbose url raw ios-deploy
+17 verbose url resolving [ 'https://registry.npmjs.org/', './ios-deploy' ]
+18 verbose url resolved https://registry.npmjs.org/ios-deploy
+19 info trying registry request attempt 1 at 01:24:08
+20 verbose etag "6BKTKPE4G7EXRSM2DVQPK19RM"
+21 http GET https://registry.npmjs.org/ios-deploy
+22 http 304 https://registry.npmjs.org/ios-deploy
+23 silly registry.get cb [ 304,
+23 silly registry.get   { date: 'Mon, 12 May 2014 23:24:08 GMT',
+23 silly registry.get     server: 'Apache',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'last-modified': 'Mon, 12 May 2014 23:24:09 GMT',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     etag: '"6BKTKPE4G7EXRSM2DVQPK19RM"',
+23 silly registry.get     'x-served-by': 'cache-am72-AMS',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1399937048.955704927,VS0,VE178',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'content-length': '0',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 verbose etag ios-deploy from cache
+25 silly addNameRange number 2 { name: 'ios-deploy', range: '*', hasData: true }
+26 silly addNameRange versions [ 'ios-deploy',
+26 silly addNameRange   [ '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7' ] ]
+27 verbose addNamed [ 'ios-deploy', '1.0.7' ]
+28 verbose addNamed [ '1.0.7', '1.0.7' ]
+29 silly lockFile bb12d217-ios-deploy-1-0-7 ios-deploy@1.0.7
+30 verbose lock ios-deploy@1.0.7 /Users/japonte/.npm/bb12d217-ios-deploy-1-0-7.lock
+31 silly lockFile 5ba2e8b0--ios-deploy-ios-deploy-1-0-7-tgz https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+32 verbose lock https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz /Users/japonte/.npm/5ba2e8b0--ios-deploy-ios-deploy-1-0-7-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz',
+33 verbose addRemoteTarball   '24993073833b539b3cb155af2461c348e0ecdd37' ]
+34 info retry fetch attempt 1 at 01:24:09
+35 verbose fetch to= /var/folders/z4/pdb3vfz960bbn96zsr9c_8h00000gn/T/npm-9096-6QCtMfr9/1399937049554-0.3418699649628252/tmp.tgz
+36 http GET https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+37 http 200 https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+38 silly lockFile 5ba2e8b0--ios-deploy-ios-deploy-1-0-7-tgz https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+39 silly lockFile 5ba2e8b0--ios-deploy-ios-deploy-1-0-7-tgz https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+40 silly lockFile bb12d217-ios-deploy-1-0-7 ios-deploy@1.0.7
+41 silly lockFile bb12d217-ios-deploy-1-0-7 ios-deploy@1.0.7
+42 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+43 silly lockFile 9c508a6b-ios-deploy ios-deploy@
+44 error Error: shasum check failed for /var/folders/z4/pdb3vfz960bbn96zsr9c_8h00000gn/T/npm-9096-6QCtMfr9/1399937049554-0.3418699649628252/tmp.tgz
+44 error Expected: 24993073833b539b3cb155af2461c348e0ecdd37
+44 error Actual:   2853ca48b79bae24d6f5d456fdfcb97af51a558f
+44 error From:     https://registry.npmjs.org/ios-deploy/-/ios-deploy-1.0.7.tgz
+44 error     at /usr/local/lib/node_modules/npm/node_modules/sha/index.js:38:8
+44 error     at ReadStream.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/sha/index.js:85:7)
+44 error     at ReadStream.EventEmitter.emit (events.js:117:20)
+44 error     at _stream_readable.js:920:16
+44 error     at process._tickCallback (node.js:415:13)
+45 error If you need help, you may report this *entire* log,
+45 error including the npm and node versions, at:
+45 error     <http://github.com/npm/npm/issues>
+46 error System Darwin 13.1.0
+47 error command "node" "/usr/local/bin/npm" "install" "-g" "ios-deploy"
+48 error cwd /data/work/year2014/desarrollo/cordova/cipanxampla
+49 error node -v v0.10.26
+50 error npm -v 1.4.3
+51 verbose exit [ 1, true ]

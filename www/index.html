@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Hello world application to construct a basic template -->
+<html>
+	<head>
+		<title>Centre d'Interpretació de Panxampla</title>
+		<meta http-equiv="Content-Type" content="text-html"; charset="utf-8"/>
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cipanxampla.js"></script>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+		<link rel="stylesheet" href="css/cipanxampla.css">
+	</head>
+	<body>
+		<div id="home" data-role="page">
+			<div data-role="main" class="ui-content">
+				<p id="title" align="center">
+					Centro de Interpretación de Panxampla
+					<!--<a href="#" onclick="showAlert(); return false;">Show Alert</a>-->
+				</p>
+				<div id="divimgmuseu">
+					<img class="imgmuseu" src="img/museu.jpg" alt="MUSEU" />
+				</div>
+				<ul id="menulist" data-role="listview" data-inset="true" data-theme="c">
+					<li>
+						<a href="#agenda" data-transition="slide">Agenda de actividades</a>
+					</li>
+					<li>
+						<a href="#">Galeria de imágenes</a>
+					</li>
+					<li>
+						<a href="#">Mapa del centro</a>
+					</li>
+					<li>
+						<a href="#">Guia de audio</a>
+					</li>
+					<li>
+						<a href="#">Leer QR</a>
+					</li>
+					<li>
+						<a href="#">Localizacion</a>
+					</li>
+				</ul>
+			</div><!-- /content -->
+
+		</div><!-- /page -->
+
+		<!-- Page lista para la agenda -->
+		<div id="agenda" data-role="page">
+			<div data-role="header">
+				<h1>Agenda</h1><a href="#home" data-icon="delete" class="ui-btn-left">Volver</a>
+			</div><!-- /header -->
+			<div data-role="main" class="ui-content">
+				<ul id="listagenda" data-role="listview">
+					<li>
+						<a href="#agenda1" data-rel="dialog" data-transition="flip" >Exposición permanente</a>
+					</li>
+					<li>
+						<a href="#">Ruta del Panxampla</a>
+					</li>
+					<li>
+						<a href="#">Cursa del Panxampla</a>
+					</li>
+				</ul>
+			</div><!--/content-->
+		</div><!-- /page -->
+
+		<!-- Page for dialog agenda 1 exposicion permanente -->
+		<div data-role="page"  id="agenda1">
+			<div data-role="header">
+				<h1>Exposición</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<p>
+					Visite nuestra exposición permanente con muestras representativas de ....
+				</p>
+				<a href="#agenda">Volver a la agenda</a>
+			</div>
+		</div>
+
+	</body>
+</html>

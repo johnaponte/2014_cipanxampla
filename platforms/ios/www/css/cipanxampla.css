@@ -1,0 +1,20 @@
+* {
+    font: 14px Calibri,Arial !important;
+}
+
+
+#title {
+	 font: 16px Calibri,Arial !important;
+	 font-weight:bold;
+}
+
+#divimgmuseu {
+	display: block;
+	width=100%
+}
+.imgmuseu {
+	display: block;
+	margin 0px auto;
+	max-width: 60%;
+	max-height: 30%;
+}

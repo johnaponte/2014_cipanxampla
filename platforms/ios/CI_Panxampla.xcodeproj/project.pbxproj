@@ -44,6 +44,7 @@
 		C10578EF3C834EB994B76CD0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1E7806199C463887225CA1 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
 		268F7B672B4E4A289C852DF7 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C3AA44016548E693DF547A /* CDVStatusBar.m */; };
+		14D76E190E814834AB260C22 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = C020EF48B5C443DF910FD23C /* CDVSplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,8 @@
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = CI_Panxampla/config.xml; sourceTree = "<group>"; };
 		86C3AA44016548E693DF547A /* CDVStatusBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVStatusBar.m"; path = "org.apache.cordova.statusbar/CDVStatusBar.m"; sourceTree = "<group>"; fileEncoding = 4; };
 		7A8E328C915C4597B8443B65 /* CDVStatusBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVStatusBar.h"; path = "org.apache.cordova.statusbar/CDVStatusBar.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C020EF48B5C443DF910FD23C /* CDVSplashScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSplashScreen.m"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		56622B2FE7004E0DBC61F4B4 /* CDVSplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSplashScreen.h"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +252,8 @@
 				2E8E861B28534662AEAE9268 /* CDVVibration.h */,
 				86C3AA44016548E693DF547A /* CDVStatusBar.m */,
 				7A8E328C915C4597B8443B65 /* CDVStatusBar.h */,
+				C020EF48B5C443DF910FD23C /* CDVSplashScreen.m */,
+				56622B2FE7004E0DBC61F4B4 /* CDVSplashScreen.h */,
 			);
 			name = Plugins;
 			path = CI_Panxampla/Plugins;
@@ -453,6 +458,7 @@
 				560F9090CE49423DBE5D8D48 /* CDVNotification.m in Sources */,
 				84B918D816D24D41B6C2EEE1 /* CDVVibration.m in Sources */,
 				268F7B672B4E4A289C852DF7 /* CDVStatusBar.m in Sources */,
+				14D76E190E814834AB260C22 /* CDVSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,8 +6,8 @@ local.properties
 *.pydevproject
 .project
 .metadata
-ant-build/**/*
-ant-gen/**/*
+ant-build/
+ant-gen/
 local.properties
-build/**/*
+build/
 

@@ -31,6 +31,10 @@
                         {
                             "xml": "<preference name=\"StatusBarBackgroundColor\" value=\"#000000\" />",
                             "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"SplashScreen\"><param name=\"ios-package\" value=\"CDVSplashScreen\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
                         }
                     ]
                 }
@@ -41,6 +45,12 @@
                         {
                             "xml": "true",
                             "count": 2
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": "false",
+                            "count": 1
                         }
                     ]
                 }
@@ -58,6 +68,9 @@
             "PACKAGE_NAME": "net.redirectme.tqserver.cipanxampla"
         },
         "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "net.redirectme.tqserver.cipanxampla"
+        },
+        "org.apache.cordova.splashscreen": {
             "PACKAGE_NAME": "net.redirectme.tqserver.cipanxampla"
         }
     },

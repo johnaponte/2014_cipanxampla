@@ -4,10 +4,6 @@
 	<head>
 		<title>Centre d'Interpretació de Panxampla</title>
 		<meta http-equiv="Content-Type" content="text-html"; charset="utf-8"/>
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/cipanxampla.js"></script>
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
 		<link rel="stylesheet" href="css/cipanxampla.css">
 	</head>
@@ -19,7 +15,7 @@
 					<!--<a href="#" onclick="showAlert(); return false;">Show Alert</a>-->
 				</p>
 				<div id="divimgmuseu">
-					<img class="imgmuseu" src="img/museu.jpg" alt="MUSEU" />
+					<img id="imgmuseu" src="img/museu.jpg" alt="MUSEU" />
 				</div>
 				<ul id="menulist" data-role="listview" data-inset="true" data-theme="c">
 					<li>
@@ -78,6 +74,17 @@
 				<a href="#agenda">Volver a la agenda</a>
 			</div>
 		</div>
+
+
+		<!-- Here it comes the javascript -->
+		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/cipanxampla.js"></script>
+		<script type="text/javascript">
+            app.initialize();
+        </script>
+
 
 	</body>
 </html>

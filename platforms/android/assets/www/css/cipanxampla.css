@@ -1,0 +1,28 @@
+* {
+    font: 14px Calibri,Arial !important;
+}
+
+#title {
+	 font: 16px Calibri,Arial !important;
+	 font-weight:bold;
+}
+
+
+#home {
+	width=100%;
+	 margin=0;
+}
+
+
+#divimgmuseu {
+    text-align: center; /* center the image */
+}
+
+#imgmuseu {
+    display: inline-block;  /* treat the img like text */
+    max-width: 250px; /*resolution of the img*/
+    width: 80%; /* shrink to 10% if lower than 60px */
+    margin: 0.3em auto;  /* add space between top and bottom edge of container */
+}
+
+

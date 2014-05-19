@@ -180,3 +180,93 @@ Terminating in response to SpringBoard's termination.
 2014-05-19 00:22:36.838 CI_Panxampla[12641:70b] [CDVTimer][TotalPluginStartup] 23.688018ms
 2014-05-19 00:22:37.016 CI_Panxampla[12641:70b] Resetting plugins due to page load.
 2014-05-19 00:22:37.240 CI_Panxampla[12641:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:31:23.785 CI_Panxampla[1229:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 06:31:23.811 CI_Panxampla[1229:70b] Unlimited access to network resources
+2014-05-19 06:31:24.003 CI_Panxampla[1229:70b] [CDVTimer][statusbar] 54.351032ms
+2014-05-19 06:31:24.013 CI_Panxampla[1229:70b] [CDVTimer][splashscreen] 8.355975ms
+2014-05-19 06:31:24.013 CI_Panxampla[1229:70b] [CDVTimer][TotalPluginStartup] 64.607024ms
+2014-05-19 06:31:24.191 CI_Panxampla[1229:70b] Resetting plugins due to page load.
+2014-05-19 06:31:24.549 CI_Panxampla[1229:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:31:27.309 CI_Panxampla[1229:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:31:27.309 CI_Panxampla[1229:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:31:27.310 CI_Panxampla[1229:70b] Resetting plugins due to page load.
+2014-05-19 06:31:27.375 CI_Panxampla[1229:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+Terminating in response to SpringBoard's termination.
+2014-05-19 06:33:53.116 CI_Panxampla[1566:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 06:33:53.125 CI_Panxampla[1566:70b] Unlimited access to network resources
+2014-05-19 06:33:53.163 CI_Panxampla[1566:70b] [CDVTimer][statusbar] 18.537998ms
+2014-05-19 06:33:53.167 CI_Panxampla[1566:70b] [CDVTimer][splashscreen] 3.306985ms
+2014-05-19 06:33:53.167 CI_Panxampla[1566:70b] [CDVTimer][TotalPluginStartup] 22.800028ms
+2014-05-19 06:33:53.444 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:33:53.677 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:33:56.138 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:33:56.139 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:33:56.140 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:33:56.207 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 06:33:58.080 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:33:58.081 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:33:58.082 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:33:58.132 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:34:00.152 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:00.152 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:00.154 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:00.202 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 06:34:06.427 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:06.428 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:06.429 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:06.478 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:34:08.532 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:08.533 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:08.534 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:08.582 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 06:34:17.087 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:17.088 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:17.089 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:17.149 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:34:19.724 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:19.724 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:19.726 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:19.773 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 06:34:23.035 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:23.035 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:23.036 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:23.085 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:34:39.651 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:39.651 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:39.652 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:39.701 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 06:34:47.087 CI_Panxampla[1566:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:47.087 CI_Panxampla[1566:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 06:34:47.088 CI_Panxampla[1566:70b] Resetting plugins due to page load.
+2014-05-19 06:34:47.138 CI_Panxampla[1566:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 06:35:10.270 CI_Panxampla[1566:70b] Received memory warning.
+2014-05-19 07:18:54.126 CI_Panxampla[2197:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 07:18:54.143 CI_Panxampla[2197:70b] Unlimited access to network resources
+2014-05-19 07:18:54.172 CI_Panxampla[2197:70b] [CDVTimer][statusbar] 8.594990ms
+2014-05-19 07:18:54.175 CI_Panxampla[2197:70b] [CDVTimer][splashscreen] 3.398001ms
+2014-05-19 07:18:54.176 CI_Panxampla[2197:70b] [CDVTimer][TotalPluginStartup] 12.652993ms
+2014-05-19 07:18:54.382 CI_Panxampla[2197:70b] Resetting plugins due to page load.
+2014-05-19 07:18:54.624 CI_Panxampla[2197:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 07:19:09.475 CI_Panxampla[2197:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:19:09.475 CI_Panxampla[2197:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:19:09.476 CI_Panxampla[2197:70b] Resetting plugins due to page load.
+2014-05-19 07:19:09.525 CI_Panxampla[2197:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 07:19:11.517 CI_Panxampla[2197:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:19:11.517 CI_Panxampla[2197:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:19:11.518 CI_Panxampla[2197:70b] Resetting plugins due to page load.
+2014-05-19 07:19:11.564 CI_Panxampla[2197:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 07:21:20.262 CI_Panxampla[2540:70b] Multi-tasking -> Device: YES, App: YES
+2014-05-19 07:21:20.271 CI_Panxampla[2540:70b] Unlimited access to network resources
+2014-05-19 07:21:20.300 CI_Panxampla[2540:70b] [CDVTimer][statusbar] 8.662999ms
+2014-05-19 07:21:20.304 CI_Panxampla[2540:70b] [CDVTimer][splashscreen] 3.389001ms
+2014-05-19 07:21:20.304 CI_Panxampla[2540:70b] [CDVTimer][TotalPluginStartup] 13.067007ms
+2014-05-19 07:21:20.557 CI_Panxampla[2540:70b] Resetting plugins due to page load.
+2014-05-19 07:21:20.792 CI_Panxampla[2540:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html
+2014-05-19 07:21:37.998 CI_Panxampla[2540:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:21:37.999 CI_Panxampla[2540:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:21:38.000 CI_Panxampla[2540:70b] Resetting plugins due to page load.
+2014-05-19 07:21:38.049 CI_Panxampla[2540:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/agenda.html
+2014-05-19 07:21:54.668 CI_Panxampla[2540:70b] CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:21:54.669 CI_Panxampla[2540:70b] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2014-05-19 07:21:54.670 CI_Panxampla[2540:70b] Resetting plugins due to page load.
+2014-05-19 07:21:54.722 CI_Panxampla[2540:70b] Finished load of: file:///Users/japonte/Library/Application%20Support/iPhone%20Simulator/7.1/Applications/1CA31A61-A6CA-4A50-997D-53D3336E0370/CI_Panxampla.app/www/index.html

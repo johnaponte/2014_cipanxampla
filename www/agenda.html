@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <!-- Hello world application to construct a basic template -->
 <html>
+
 	<head>
 		<title>Centre d'Interpretació de Panxampla</title>
-		<meta http-equiv="Content-Type" content="text-html"; charset="utf-8"/>
-		<link rel="stylesheet" href="css/jquery.mobile-1.4.2.css">
+		<link rel="stylesheet" href="lib/jquery.mobile-1.4.2.css">
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
 		<link rel="stylesheet" href="css/cipanxampla.css">
-		<!-- Here it comes the javascript -->
-		<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jquery-1.9.1.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.4.2.js"></script>
-		<script type="text/javascript" charset="utf-8" src="js/cipanxampla.js"></script>
-
+		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
+		<script src="libs/jquery-1.10.2.min.js"></script>
+		<script src="libs/jquery.mobile-1.4.2.js"></script>
 	</head>
+
 	<body>
-		<!-- Page lista para la agenda -->
+
+		<!-- Agenda main page -->
 		<div id="agenda" data-role="page">
 			<div data-role="header">
-				<h1>Localització</h1><a href="index.html" target="#home" data-icon="delete" class="ui-btn-left">Tornar</a>
+				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
+				<h1>Localització</h1>
 			</div><!-- /header -->
 			<div data-role="main" class="ui-content">
 				<ul id="listagenda" data-role="listview">
@@ -67,8 +71,7 @@
 				</p>
 				<a href="#agenda">Volver a la agenda</a>
 			</div>
-		</div>
-		<!-- fin Exposicio-->
+		</div><!-- fin Exposicio-->
 
 		<!-- Page for dialog ruta  -->
 		<div data-role="page"  id="ruta">
@@ -82,8 +85,7 @@
 					Parc Natural dels Ports. Envoltat de muntanyes, valls i barrancs i situat sobre guixos
 					i calcàries de la època del Triàsic, on afloren els sediments més antics dels
 					Ports, amb una extensió de 6.400 hectàrees.
-					
-					
+
 				</p>
 
 				<a href="#agenda">Volver a la agenda</a>
@@ -95,51 +97,54 @@
 			<div data-role="header">
 				<h1>Cursa</h1>
 			</div>
-			<p>
-				Cursa de muntanya pels paratges que recoría el Panxampla. 
-				Descripció del recorregut: 
-			</p>	
-			<p>
-				Iniciarem la cursa a la zona esportiva de la població (322 m)
-				i els nostres primers passos ens ajudaran a escalfar la “maquinària”
-				mentre ens adrecem a la sendera GR-7. Aquesta sendera amunt ens conduirà fins
-				al Corral de Marí (60 0m), i un cop aquí un gir a l’esquerra ens portarà
-				a la sendera que passa per la Cova del Vidre (634 m).
-				Continuarem endavant fins arribar als Bassis.(548 m). Des d’aquest darrer punt
-				agafarem forces ja que ens espera un pendent pronunciat fins arribar a
-				la Punta de l’Espina (1.182 m). Aquest any fins a la cima en vistes a
-				les Roques de Benet d’Horta de Sant Joan.
-			</p>
-			<p>
-				Vençut aquest desnivell seguirem avall fins a l’era del Corral del Maraco,
-				i com a novetat, la cursa transcorrerà per la cresta de la muntanya amb boniques
-				vistes a les dues valls, fins arribar a una tartera (baixa molt tècnica) que ens
-				deixarà a peu de la sendera de Carrer Ample (913 m).
-			</p>
-			<p>
-				Enfilarem el recorregut fins enllaçar amb el GR de les Rases del Maraco (102 0m),
-				i les fantàstiques vistes com a testimonis de la nosta gesta ens plantaran al Coll
-				dels Corralets (1054 m); on ens llençarem per segon cop tartera avall (baixada tècnica)
-				i sense deixar la sendera ben aviat veurem enfront la Cova dels Adells (790 m).
-			</p>
-			<p>
-				Ràpidament el trajecte ens portarà fins al Coll de Morera (575 m), un senderol fins a
-				la Font del Ferro i a escassos metres trobarem l’ombra refrescant de les Fonts del Toscà (508 m).
-			</p>
-			<p>
-				En aquest punt introduïm una altra novetat a l’antic recorregut per trepitjar
-				indrets diferents i a la vegada creiem que més atractius que ens endinsaran pels racons del Toscar, fins al de Villaubí 600 m.  Des d’aquest punt la sendera deixa a mà dreta la vall del Barranc Cervera, i correm avall fins topar-nos amb el Carrascot (476 m). Amb les cames cansades i sense parar arribarem a creuar el barranc de la Conca pel Pas de Peret (245 m).
-			</p>
-				Emprenem la darrera pujada creuant la carretera local que condueix al poble , i
-				un senderol ens deixarà en vistes d’Alfara de Carles i solament restarà 1 Km fins a 
-				l’arribada (322 m).
-
-			</p>
-
 			<div data-role="main" class="ui-content">
+
+				<p>
+					Cursa de muntanya pels paratges que recoría el Panxampla.
+					Descripció del recorregut:
+				</p>
+				<p>
+					Iniciarem la cursa a la zona esportiva de la població (322 m)
+					i els nostres primers passos ens ajudaran a escalfar la “maquinària”
+					mentre ens adrecem a la sendera GR-7. Aquesta sendera amunt ens conduirà fins
+					al Corral de Marí (60 0m), i un cop aquí un gir a l’esquerra ens portarà
+					a la sendera que passa per la Cova del Vidre (634 m).
+					Continuarem endavant fins arribar als Bassis.(548 m). Des d’aquest darrer punt
+					agafarem forces ja que ens espera un pendent pronunciat fins arribar a
+					la Punta de l’Espina (1.182 m). Aquest any fins a la cima en vistes a
+					les Roques de Benet d’Horta de Sant Joan.
+				</p>
+				<p>
+					Vençut aquest desnivell seguirem avall fins a l’era del Corral del Maraco,
+					i com a novetat, la cursa transcorrerà per la cresta de la muntanya amb boniques
+					vistes a les dues valls, fins arribar a una tartera (baixa molt tècnica) que ens
+					deixarà a peu de la sendera de Carrer Ample (913 m).
+				</p>
+				<p>
+					Enfilarem el recorregut fins enllaçar amb el GR de les Rases del Maraco (102 0m),
+					i les fantàstiques vistes com a testimonis de la nosta gesta ens plantaran al Coll
+					dels Corralets (1054 m); on ens llençarem per segon cop tartera avall (baixada tècnica)
+					i sense deixar la sendera ben aviat veurem enfront la Cova dels Adells (790 m).
+				</p>
+				<p>
+					Ràpidament el trajecte ens portarà fins al Coll de Morera (575 m), un senderol fins a
+					la Font del Ferro i a escassos metres trobarem l’ombra refrescant de les Fonts del Toscà (508 m).
+				</p>
+				<p>
+					En aquest punt introduïm una altra novetat a l’antic recorregut per trepitjar
+					indrets diferents i a la vegada creiem que més atractius que ens endinsaran pels racons del Toscar, fins al de Villaubí 600 m.  Des d’aquest punt la sendera deixa a mà dreta la vall del Barranc Cervera, i correm avall fins topar-nos amb el Carrascot (476 m). Amb les cames cansades i sense parar arribarem a creuar el barranc de la Conca pel Pas de Peret (245 m).
+				</p>
+				<p>
+					Emprenem la darrera pujada creuant la carretera local que condueix al poble , i
+					un senderol ens deixarà en vistes d’Alfara de Carles i solament restarà 1 Km fins a
+					l’arribada (322 m).
+
+				</p>
+
 				<a href="#agenda">Volver a la agenda</a>
-			</div>
+			</div><!--content-->
 		</div><!--fin Cursa-->
 
 	</body>
 </html>
+

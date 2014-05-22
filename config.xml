@@ -2,7 +2,7 @@
 <widget id="net.redirectme.tqserver.cipanxampla" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>CI_Panxampla</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Practice on UOC to show Cordova application.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
@@ -13,5 +13,4 @@
 	<preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashsScreenDelay" value="10000" />
-
 </widget>

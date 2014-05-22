@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--bad example..uses another version of jquery and jquery mobiles -->
+<html>
+	<head>
+		<title>Galeria</title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+
+		<link href="libs/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
+		<link href="libs/photoswipe.css" type="text/css" rel="stylesheet" />
+		<link href="css/gallery.css" type="text/css" rel="stylesheet" />
+
+		<script type="text/javascript" src="libs/klass.min.js"></script>
+		<script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="libs/jquery.mobile-1.4.2.js"></script>
+		<script type="text/javascript" src="libs/code.photoswipe.jquery-3.0.5.1.min.js"></script>
+
+		<script type="text/javascript">
+			/*
+			 * IMPORTANT!!!
+			 * REMEMBER TO ADD  rel="external"  to your anchor tags.
+			 * If you don't this will mess with how jQuery Mobile works
+			 */
+			$(document).on("pageshow", "#galeria", function(e) {
+				console.log("** On pageshow of #galeria");
+				e.preventDefault();
+				var currentPage = $(e.target), options = {
+					allowUserZoom : false
+				}, photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options, currentPage.attr('id'));
+				return true;
+			});
+
+			$(document).on("pagehide", "#galeria", function(e) {
+				console.log("** On pagehide of #galeria");
+				var currentPage = $(e.target), photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
+
+				if ( typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
+					PhotoSwipe.detatch(photoSwipeInstance);
+				}
+
+				return true;
+			});
+
+		</script>
+
+	</head>
+	<body>
+
+		<div id="galeria" data-role="page" >
+
+			<div data-role="header">
+				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
+				<h1>Galeria</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+
+				<ul class="gallery">
+
+					<li>
+						<a href='gallery/full/P1020440.jpg' rel='external'><img src='gallery/thumb/P1020440.jpg' alt='Imagen P1020440.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020442.jpg' rel='external'><img src='gallery/thumb/P1020442.jpg' alt='Imagen P1020442.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020443.jpg' rel='external'><img src='gallery/thumb/P1020443.jpg' alt='Imagen P1020443.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020444.jpg' rel='external'><img src='gallery/thumb/P1020444.jpg' alt='Imagen P1020444.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020445.jpg' rel='external'><img src='gallery/thumb/P1020445.jpg' alt='Imagen P1020445.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020446.jpg' rel='external'><img src='gallery/thumb/P1020446.jpg' alt='Imagen P1020446.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020447.jpg' rel='external'><img src='gallery/thumb/P1020447.jpg' alt='Imagen P1020447.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020448.jpg' rel='external'><img src='gallery/thumb/P1020448.jpg' alt='Imagen P1020448.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020449.jpg' rel='external'><img src='gallery/thumb/P1020449.jpg' alt='Imagen P1020449.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020452.jpg' rel='external'><img src='gallery/thumb/P1020452.jpg' alt='Imagen P1020452.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020454.jpg' rel='external'><img src='gallery/thumb/P1020454.jpg' alt='Imagen P1020454.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020456.jpg' rel='external'><img src='gallery/thumb/P1020456.jpg' alt='Imagen P1020456.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020457.jpg' rel='external'><img src='gallery/thumb/P1020457.jpg' alt='Imagen P1020457.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020459.jpg' rel='external'><img src='gallery/thumb/P1020459.jpg' alt='Imagen P1020459.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020461.jpg' rel='external'><img src='gallery/thumb/P1020461.jpg' alt='Imagen P1020461.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1020462.jpg' rel='external'><img src='gallery/thumb/P1020462.jpg' alt='Imagen P1020462.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030198.jpg' rel='external'><img src='gallery/thumb/P1030198.jpg' alt='Imagen P1030198.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030199.jpg' rel='external'><img src='gallery/thumb/P1030199.jpg' alt='Imagen P1030199.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030200.jpg' rel='external'><img src='gallery/thumb/P1030200.jpg' alt='Imagen P1030200.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030205.jpg' rel='external'><img src='gallery/thumb/P1030205.jpg' alt='Imagen P1030205.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030207.jpg' rel='external'><img src='gallery/thumb/P1030207.jpg' alt='Imagen P1030207.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030208.jpg' rel='external'><img src='gallery/thumb/P1030208.jpg' alt='Imagen P1030208.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030210.jpg' rel='external'><img src='gallery/thumb/P1030210.jpg' alt='Imagen P1030210.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030213.jpg' rel='external'><img src='gallery/thumb/P1030213.jpg' alt='Imagen P1030213.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030214.jpg' rel='external'><img src='gallery/thumb/P1030214.jpg' alt='Imagen P1030214.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030215.jpg' rel='external'><img src='gallery/thumb/P1030215.jpg' alt='Imagen P1030215.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030216.jpg' rel='external'><img src='gallery/thumb/P1030216.jpg' alt='Imagen P1030216.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030220.jpg' rel='external'><img src='gallery/thumb/P1030220.jpg' alt='Imagen P1030220.jpg' /></a>
+					</li>
+					<li>
+						<a href='gallery/full/P1030221.jpg' rel='external'><img src='gallery/thumb/P1030221.jpg' alt='Imagen P1030221.jpg' /></a>
+					</li>
+				</ul>
+			</div><!--gallery -->
+		</div><!-- page gallery 1-->
+	</body>
+</html>

@@ -8,40 +8,13 @@
 
 		<link href="libs/jquery.mobile-1.4.2.min.css" rel="stylesheet" />
 		<link href="libs/photoswipe.css" type="text/css" rel="stylesheet" />
-		<link href="css/gallery.css" type="text/css" rel="stylesheet" />
+		<link href="css/galeria.css" type="text/css" rel="stylesheet" />
 
 		<script type="text/javascript" src="libs/klass.min.js"></script>
 		<script type="text/javascript" src="libs/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="libs/jquery.mobile-1.4.2.js"></script>
 		<script type="text/javascript" src="libs/code.photoswipe.jquery-3.0.5.1.min.js"></script>
-
-		<script type="text/javascript">
-			/*
-			 * IMPORTANT!!!
-			 * REMEMBER TO ADD  rel="external"  to your anchor tags.
-			 * If you don't this will mess with how jQuery Mobile works
-			 */
-			$(document).on("pageshow", "#galeria", function(e) {
-				console.log("** On pageshow of #galeria");
-				e.preventDefault();
-				var currentPage = $(e.target), options = {
-					allowUserZoom : false
-				}, photoSwipeInstance = $("ul.gallery a", e.target).photoSwipe(options, currentPage.attr('id'));
-				return true;
-			});
-
-			$(document).on("pagehide", "#galeria", function(e) {
-				console.log("** On pagehide of #galeria");
-				var currentPage = $(e.target), photoSwipeInstance = PhotoSwipe.getInstance(currentPage.attr('id'));
-
-				if ( typeof photoSwipeInstance != "undefined" && photoSwipeInstance != null) {
-					PhotoSwipe.detatch(photoSwipeInstance);
-				}
-
-				return true;
-			});
-
-		</script>
+		<script type="text/javascript" src="js/galeria.js"></script>
 
 	</head>
 	<body>

@@ -9,24 +9,10 @@
 		<meta name="format-detection" content="telephone=no" />
 		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-		<link rel="stylesheet" href="css/cipanxampla.css">
-		<link rel="stylesheet" href="css/gallery.css">
 		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="css/mapa.css">
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
-		<style>
-			#map {
-				width: 100%;
-				margin: 0;
-			}
-
-			img[usemap] {
-				border: none;
-				height: auto;
-				max-width: 100%;
-				width: auto;
-			}
-		</style>
 	</head>
 
 	<body>
@@ -36,32 +22,25 @@
 				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
 				<h1>Planol</h1>
 			</div>
-
+			<div id="locationcontainer">
+				<p id="location">
+					Tocar el planol
+				</p>
+			</div>
 			<div data-role="main" class="ui-content">
-				<img src="gallery/floor1.jpg" width="400" height="669" usemap="#floor1" alt="" />
-				<map name="floor1">
-					<area shape="poly" coords="61,257,27,417,125,423,142,258,61,257" href="#sp" title="Sala de Projecció" alt="Sala de projecció" />
-					<area shape="poly" coords="130,93,122,226,159,230,168,95,130,93" href="#bany" title="Lavabo" alt="Lavabo" />
-					<area shape="poly" coords="143,258,129,425,231,428,228,260,143,258" href="#recepcio" title="Recepció" alt="Recepció" />
-					<area shape="poly" coords="232,332,234,429,373,392,383,326" href="#exposicio" title="Exposició" alt="Exposició" />
-				</map>
+				<div id="mapcontainer">
+					<img src="gallery/floor1.jpg" width="400" height="669" usemap="#floor1" alt="" />
+					<map name="floor1">
+						<area shape="poly" coords="61,257,27,417,125,423,142,258,61,257" href="#sp" title="Sala de Projecció" alt="Sala de projecció" />
+						<area shape="poly" coords="130,93,122,226,159,230,168,95,130,93" href="#bany" title="Lavabo" alt="Lavabo" />
+						<area shape="poly" coords="143,258,129,425,231,428,228,260,143,258" href="#recepcio" title="Recepció" alt="Recepció" />
+						<area shape="poly" coords="232,332,234,429,373,392,383,326" href="#exposicio" title="Exposició" alt="Exposició" />
+					</map>
+				</div>
 			</div><!--content-->
-		</div><!-- page galeria-->
+		</div><!-- page mapa-->
 
 		<script src="libs/jquery.rwdImageMaps.min.js"></script>
-		<script>
-			$(document).on("pageshow", "#map", function(e) {
-				console.log("** On pageshow of #map");
-				$('img[usemap]').rwdImageMaps();
-				// Callback function for
-
-				$('area').on('click', function() {
-					var msg = $(this).attr('alt');
-					console.log("* Click on " + msg);
-					alert(msg);
-				});
-			});
-
-		</script>
+		<script src="js/mapa.js"></script>
 	</body>
 </html>

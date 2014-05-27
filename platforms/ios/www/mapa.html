@@ -15,6 +15,9 @@
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
 		<style>
+			#mapcontainer {
+				text-align: center; /* center the image */
+			}
 			#map {
 				width: 100%;
 				margin: 0;
@@ -26,6 +29,15 @@
 				max-width: 100%;
 				width: auto;
 			}
+
+			#locationcontainer {
+				width: 100%;
+				margin: 0%;
+			}
+			#location {
+				text-align: center;
+			}
+
 		</style>
 	</head>
 
@@ -36,15 +48,21 @@
 				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
 				<h1>Planol</h1>
 			</div>
-
+			<div id="locationcontainer">
+				<p id="location">
+					Ubicació
+				</p>
+			</div>
 			<div data-role="main" class="ui-content">
-				<img src="gallery/floor1.jpg" width="400" height="669" usemap="#floor1" alt="" />
-				<map name="floor1">
-					<area shape="poly" coords="61,257,27,417,125,423,142,258,61,257" href="#sp" title="Sala de Projecció" alt="Sala de projecció" />
-					<area shape="poly" coords="130,93,122,226,159,230,168,95,130,93" href="#bany" title="Lavabo" alt="Lavabo" />
-					<area shape="poly" coords="143,258,129,425,231,428,228,260,143,258" href="#recepcio" title="Recepció" alt="Recepció" />
-					<area shape="poly" coords="232,332,234,429,373,392,383,326" href="#exposicio" title="Exposició" alt="Exposició" />
-				</map>
+				<div id="mapcontainer">
+					<img src="gallery/floor1.jpg" width="400" height="669" usemap="#floor1" alt="" />
+					<map name="floor1">
+						<area shape="poly" coords="61,257,27,417,125,423,142,258,61,257" href="#sp" title="Sala de Projecció" alt="Sala de projecció" />
+						<area shape="poly" coords="130,93,122,226,159,230,168,95,130,93" href="#bany" title="Lavabo" alt="Lavabo" />
+						<area shape="poly" coords="143,258,129,425,231,428,228,260,143,258" href="#recepcio" title="Recepció" alt="Recepció" />
+						<area shape="poly" coords="232,332,234,429,373,392,383,326" href="#exposicio" title="Exposició" alt="Exposició" />
+					</map>
+				</div>
 			</div><!--content-->
 		</div><!-- page galeria-->
 
@@ -57,8 +75,9 @@
 
 				$('area').on('click', function() {
 					var msg = $(this).attr('alt');
+					$("#location").text(msg);
 					console.log("* Click on " + msg);
-					alert(msg);
+					//					alert(msg);
 				});
 			});
 

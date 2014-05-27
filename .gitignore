@@ -1,9 +1,5 @@
 # Mac noise
 .DS_Store
-<<<<<<< HEAD
-=======
-
->>>>>>> FETCH_HEAD
 #eclipserelated
 local.properties
 *.pydevproject
@@ -13,8 +9,4 @@ ant-build/
 ant-gen/
 local.properties
 build/
-<<<<<<< HEAD
 console.log
-=======
-
->>>>>>> FETCH_HEAD

@@ -49,4 +49,7 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashsScreenDelay" value="10000" />
+    <feature name="BarcodeScanner">
+        <param name="ios-package" value="CDVBarcodeScanner" />
+    </feature>
 </widget>

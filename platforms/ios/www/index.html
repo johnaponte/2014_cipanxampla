@@ -4,16 +4,20 @@
 
 	<head>
 		<title>Centre d'Interpretació de Panxampla</title>
-		<link rel="stylesheet" href="lib/jquery.mobile-1.4.2.css">
+
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-		<link rel="stylesheet" href="css/cipanxampla.css">
-		<link rel="stylesheet" href="css/gallery.css">
+
 		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="css/cipanxampla.css">
+
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
+		<script src="cordova.js"></script>
+		<!--page code -->
+		<script src="js/home.js"></script>
 	</head>
 
 	<body>
@@ -37,10 +41,10 @@
 						<a href="mapa.html" data-ajax="false"> Plànol del centre</a>
 					</li>
 					<li>
-						<a href="construccion.html"> Guia d’àudio</a>
+						<a href="audioguia.html" target="audioguia"> Guia d’àudio</a>
 					</li>
 					<li>
-						<a href="construccion.html"> Lector  QR</a>
+						<a href="scan.html" target="#scan"> Lector  QR</a>
 					</li>
 					<li>
 						<a href="construccion.html"> Localització</a>
@@ -49,12 +53,6 @@
 			</div><!-- /content -->
 
 		</div><!-- /page -->
-
-
-		<!-- Here it comes the javascript -->
-		<script type="text/javascript" src="cordova.js"></script>
-		<!-- Api Specific -->
-		<script type="text/javascript" src="js/home.js"></script>
 
 	</body>
 </html>

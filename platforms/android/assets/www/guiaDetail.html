@@ -11,28 +11,44 @@
 		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
+		<script src="cordova.js"></script>
+
 	</head>
 
 	<body>
-
-		<!-- Agenda main page -->
-		<div id="agenda" data-role="page">
+		
+		<!-- Page for dialog agenda -->
+		<div data-role="page"  id="guiadetail">
 			<div data-role="header">
-				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
-				<h1>Agenda</h1>
-			</div><!-- /header -->
-			<div data-role="main" class="ui-content" >
+					<a id="volverButton" data-icon="home" class="ui-btn-left">Tornar</a>	
+					<h1 id="label">Title</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<p id="comment" align="center">Comment</p>
 				<p>
-					Eventos:
+					<input
+					type="button"
+					name="audioButton"
+					id="audioButton"
+					value="Iniciar Audio" />
 				</p>
-				<ul id="listagenda" data-role="listview" data-inset="true" >
+				
+				<div id="divimgguia">
+					<img id="imgguia"  alt="Image Guia" />
+				</div>
+				<p>Ubicació</p>
+				<div id="divimgmap">
+					<img id="imgmap"  alt="Image map" />
+				</div>
 					
-				</ul>
-			</div><!--/content-->
-		</div><!-- /page -->
+				<a id="volverLink">Tornar</a>
+			</div>
+		</div><!-- fin Exposicio-->
+
 
 		<!--page code -->
-		<script src="js/agenda.js"></script>
+		<script src="js/guiaDetail.js"></script>
 
 	</body>
 </html>

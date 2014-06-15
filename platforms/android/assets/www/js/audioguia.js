@@ -1,35 +1,35 @@
-// Events for the scan
-function onLoad(){
-	console.log("**On Load of audiogia");
-	document.addEventListener("deviceready", onDeviceReadyAudioguia, false);
-}
+var db;
+
+$(document).on("pageshow", "#audioguia", onDeviceReadyAudioguia);
 
 function onDeviceReadyAudioguia() {
-	console.log("**On OnDeviceReadyAudioguia");
-		$("#arnes").click(function() {
-			var src="Undefined source";
-			console.log("** Click on #arnes: " + device.platform);
-			if (   device.platform=="Android") {
-				console.log("** Android device");
-				src= "/android_asset/audio/arnes.mp3";
-			}
-			else {
-				src="audio/arnes.mp3";
-			}
-			console.log("_**The src is: "+src);
-			var media = new Media(src,
-			 // sucess callback
-			 function() {
-			 	console.log("** Sucess on arnes.mp3");
-			 },
-			 // error calback
-			 function(err) {
-			 	console.log("** Error on arnes.mp3: ["+ err.code+"], " +  err.message);
-			 });
-			 media.play();
-		});
-};
+	console.log("** On DeviceReadyAudioguia ");
+	db = window.openDatabase("panxamplaDB", "1.0", "CI Panxampla", 200000);
+	console.log("database opened");
+    db.transaction(getAudioguia, transactionError);
+}
 
+function transactionError(tx, error) {
+    alert("Database Error in Agenda: " + error);
+}
+
+function getAudioguia(tx) {
+	var sql = "select e.id, e.label from guia e";
+	tx.executeSql(sql, [], getAudioguiaSuccess);
+} 
+
+function getAudioguiaSuccess(tx, results) {
+    var len = results.rows.length;
+    for (var i=0; i<len; i++) {
+    	var guia = results.rows.item(i);
+    	console.log("** adding guia "+ guia.label);
+    	var lidef='<li><a href="guiaDetail.html?id='+guia.id+'&from=audioguia" target="guiadetail" >' + guia.label +'</a></li>';
+		console.log("** "+lidef);
+ 		$('#listaudioguia').append(lidef);
+    }
+    $('#listaudioguia').listview("refresh");
+    console.log("** #listaudioguia: "+ $("#listaudioguia").html() );
+};
 
 
 

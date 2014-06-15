@@ -12,24 +12,28 @@ function onDeviceReadyHome() {
 	navigator.splashscreen.hide();
 	db = window.openDatabase("panxamplaDB", "1.0", "CI Panxampla", 200000);
 	// Get the version number saved in the database. if not equal populate again
-	db.transaction(getVersion, transaction_error);
-	if (dbVersion=dbCurrentVersion) {
-		console.log("** Database already created");
-	} else {
-		console.log("** Database need to be created and populated");
-		db.transaction(populateDB, transaction_error, populateDB_success);
-	}
-
+		db.transaction(getVersion, transaction_error, afterGetVersion);
 };
 
 function transaction_error(tx, error) {
 	alert("Database Error: " + error);
 }
 
+function afterGetVersion(){
+	console.log("** afterGetVesrion of dbVersion and dbCurrentVersion: "+dbVersion+", "+ dbCurrentVersion);
+	if ( dbVersion != "undefined" & dbVersion == dbCurrentVersion) {
+		console.log("** Database already created");
+	} else {
+		console.log("** Database need to be created and populated");
+		db.transaction(populateDB, transaction_error, populateDB_success);
+	}
+	
+};
+
 function populateDB_success() {
 	console.log("** Database populate success");
 	dbCreated = true;
-}
+};
 
 function populateDB(tx) {
 	var sql;
@@ -38,11 +42,11 @@ function populateDB(tx) {
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql="INSERT INTO dbversion (version) VALUES (1)";
+	sql="CREATE TABLE IF NOT EXISTS  dbversion (id INTEGER PRIMARY KEY AUTOINCREMENT, version INTEGER); ";
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql="CREATE TABLE IF NOT EXISTS  dbversion (id INTEGER PRIMARY KEY AUTOINCREMENT, version INTEGER); ";
+	sql="INSERT INTO dbversion (version) VALUES (1)";
 	console.log(sql);
 	tx.executeSql(sql);
 
@@ -68,43 +72,42 @@ function populateDB(tx) {
 	tx.executeSql(sql);
 	
 	// The Audiguide
-	sql = "DROP TABLE IF EXISTS audiguia";
+	sql = "DROP TABLE IF EXISTS guia";
 	console.log(sql);
 	tx.executeSql(sql);
 	
-	sql = "CREATE TABLE IF NOT EXISTS audioguia (id INTEGER PRIMARY KEY AUTOINCREMENT, label VARCHAR(50), comment TEXT, image varchar(50), map varchar(50))";	
+	sql = "CREATE TABLE IF NOT EXISTS guia (id INTEGER PRIMARY KEY AUTOINCREMENT, label VARCHAR(50), comment TEXT, audio VARCHAR(50), image VARCHAR(50), map VARCHAR(50))";	
 	console.log(sql);
 	tx.executeSql(sql);
-	
-	sql = "INSERT INTO audiogia (label, comment, audio, image, map) values ('Arnés','Arnès de Abellas','arnes.jpg' , 'anrnes.mp3', 'planolarnes.jpg')";
+
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Arnes', 'Arnes de Abellas', 'arnes.jpg' , 'arnes.mp3', 'planolarnes.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 		
-	sql = "INSERT INTO audiogia (label, comment, audio, image, map) values ('Margalló','El Margalló','margallo.jpg' , 'margallo.mp3', 'planolmargallo.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Margalló','El Margalló','margallo.jpg' , 'margallo.mp3', 'planolmargallo.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql = "INSERT INTO audiogia (label, comment, audio, image, map) values ('Esteles funeràries','Les Esteles funeràries','esteles.jpg' , 'esteles.mp3', 'planolesteles.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Esteles funeràries','Les Esteles funeràries','esteles.jpg' , 'esteles.mp3', 'planolesteles.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql = "INSERT INTO audiogia (label, comment, audio, image, map) values ('Eines per conrear','Las Eines per conrear','eines.jpg' , 'eines.mp3', 'planoleines.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Eines per conrear','Las Eines per conrear','eines.jpg' , 'eines.mp3', 'planoleines.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
-
-
 };
 
 function getVersion(tx) {
+	dbVersion= 0;
 	console.log("** In getVersion");
-	sql="SELECT max(version) from dbversion";
+	sql="SELECT max(version) version from dbversion";
 	console.log(sql);
 	tx.executeSql(sql,[],getVersionSucess);
-}
+};
 
 function getVersionSucess(tx,result){
 	console.log("** IN getVersionSucess");
 	var versions= result.rows.item(0);
 	dbVersion=versions.version;
-	console.log("** Value of dbVersion");
-}
+	console.log("** Value of dbVersion:" + dbVersion );
+};

@@ -46,6 +46,9 @@
     <feature name="Media">
         <param name="ios-package" value="CDVSound" />
     </feature>
+    <feature name="Device">
+        <param name="ios-package" value="CDVDevice" />
+    </feature>
     <name>CI_Panxampla</name>
     <description>
         Practice on UOC to show Cordova application.
@@ -59,7 +62,4 @@
     <preference name="StatusBarBackgroundColor" value="#000000" />
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashsScreenDelay" value="10000" />
-    <feature name="Device">
-        <param name="ios-package" value="CDVDevice" />
-    </feature>
 </widget>

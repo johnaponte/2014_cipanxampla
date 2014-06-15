@@ -30,4 +30,24 @@ body {
     margin: 0.3em auto;  /* add space between top and bottom edge of container */
 }
 
+#imgguia {
+    display: inline-block;  /* treat the img like text */
+    max-width: 350px; /*resolution of the img*/
+    width: 90%; /* shrink to 10% if lower than 60px */
+    margin: 0.3em auto;  /* add space between top and bottom edge of container */	
+}
 
+#divimgguia {
+    text-align: center; /* center the image */
+}
+
+#imgmap {
+    display: inline-block;  /* treat the img like text */
+    max-width: 350px; /*resolution of the img*/
+    width: 90%; /* shrink to 10% if lower than 60px */
+    margin: 0.3em auto;  /* add space between top and bottom edge of container */	
+}
+
+#divimgmap {
+    text-align: center; /* center the image */
+}

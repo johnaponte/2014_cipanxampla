@@ -15,7 +15,6 @@
 		<script src="cordova.js"></script>
 	</head>
 
-	<body onload="onLoad()">
 
 		<!-- AudioGuia main page -->
 		<div id="audioguia" data-role="page">
@@ -23,14 +22,14 @@
 				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
 				<h1>Audioguia</h1>
 			</div><!--header-->
-			<div data-role="main" class="ui-content">
-				<p>
-					<input
-					type="button"
-					name="arnes"
-					id="arnes"
-					value="Guia Arnes" />
-				</p>
+			<div data-role="main" class="ui-content" >
+				<ul id="listaudioguia" data-role="listview" data-inset="true" >
+					
+				</ul>
+			</div><!--/content-->
+
+<!--
+-->
 			</div><!--audioguia-main-->
 
 		</div><!--audioguia_page-->

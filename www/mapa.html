@@ -4,15 +4,20 @@
 
 	<head>
 		<title>Centre d'Interpretació de Panxampla</title>
-		<link rel="stylesheet" href="lib/jquery.mobile-1.4.2.css">
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
 		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
 		<link rel="stylesheet" href="css/mapa.css">
+
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
+		<script src="cordova.js"></script>
+		<!--page code -->
+		<script src="libs/jquery.rwdImageMaps.min.js"></script>
+		<script src="js/mapa.js"></script>
 	</head>
 
 	<body>
@@ -22,12 +27,12 @@
 				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
 				<h1>Planol</h1>
 			</div>
-			<div id="locationcontainer">
-				<p id="location">
-					Tocar el planol
-				</p>
-			</div>
 			<div data-role="main" class="ui-content">
+				<div id="locationcontainer">
+					<p id="location">
+						Tocar el planol
+					</p>
+				</div>
 				<div id="mapcontainer">
 					<img src="gallery/floor1.jpg" width="400" height="669" usemap="#floor1" alt="" />
 					<map name="floor1">
@@ -40,7 +45,5 @@
 			</div><!--content-->
 		</div><!-- page mapa-->
 
-		<script src="libs/jquery.rwdImageMaps.min.js"></script>
-		<script src="js/mapa.js"></script>
 	</body>
 </html>

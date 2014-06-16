@@ -1,0 +1,23 @@
+#mapcontainer {
+	text-align: center; /* center the image */
+}
+#map {
+	width: 100%;
+	margin: 0;
+}
+
+img[usemap] {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	width: auto;
+}
+
+#locationcontainer {
+	width: 100%;
+	margin: 0%;
+}
+#location {
+	text-align: center;
+}
+

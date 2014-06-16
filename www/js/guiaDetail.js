@@ -68,7 +68,7 @@ function getGuiaDetailSuccess(tx, results) {
 	if (platform == "Android") {
 		srcAudio = "/android_asset/audio/" + guiaDetail.audio;
 	} else {
-		scrAudio = "audio/" + guiaDetail.audio;
+		srcAudio = "audioguia/" + guiaDetail.audio;
 	}
 	console.log("** Audio src: " + srcAudio);
 	$("#label").html(guiaDetail.label);

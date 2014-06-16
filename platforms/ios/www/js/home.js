@@ -1,9 +1,14 @@
 // Javascrypt for home
+console.log("** js/home.js");
+
 var db;
 var dbVersion;
 var dbCurrentVersion = 1;
 
-document.addEventListener("deviceready", onDeviceReadyHome, false);
+$(document).ready(function() {
+	console.log("** DocumentReady HOME");
+	document.addEventListener("deviceready", onDeviceReadyHome, false);
+});
 
 // device APIs are available
 function onDeviceReadyHome() {
@@ -16,8 +21,13 @@ function onDeviceReadyHome() {
 };
 
 function transaction_error(tx, error) {
-	alert("Database Error: " + error);
-}
+	alert("Database Error: Tables not defined? " + error);
+	db.transaction(populateDB, transaction_error2, populateDB_success);
+};
+
+function transaction_error2(tx, error) {
+	alert("Database Error: + error" + error);
+};
 
 function afterGetVersion(){
 	console.log("** afterGetVesrion of dbVersion and dbCurrentVersion: "+dbVersion+", "+ dbCurrentVersion);
@@ -25,14 +35,13 @@ function afterGetVersion(){
 		console.log("** Database already created");
 	} else {
 		console.log("** Database need to be created and populated");
-		db.transaction(populateDB, transaction_error, populateDB_success);
+		db.transaction(populateDB, transaction_error2, populateDB_success);
 	}
 	
 };
 
 function populateDB_success() {
 	console.log("** Database populate success");
-	dbCreated = true;
 };
 
 function populateDB(tx) {
@@ -80,19 +89,19 @@ function populateDB(tx) {
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql = "INSERT INTO guia (label, comment, audio, image, map) VALUES ('Arnes', 'Arnes de Abellas', 'arnes.jpg' , 'arnes.mp3', 'planolarnes.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Arnes', 'Arnes de Abellas', 'arnes.jpg' , 'arnes.mp3', 'planolarnes.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 		
-	sql = "INSERT INTO guia (label, comment, audio, image, map) VALUES ('Margalló','El Margalló','margallo.jpg' , 'margallo.mp3', 'planolmargallo.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Margalló','El Margalló','margallo.jpg' , 'margallo.mp3', 'planolmargallo.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql = "INSERT INTO guia (label, comment, audio, image, map) VALUES ('Esteles funeràries','Les Esteles funeràries','esteles.jpg' , 'esteles.mp3', 'planolesteles.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Esteles funeràries','Les Esteles funeràries','esteles.jpg' , 'esteles.mp3', 'planolesteles.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 
-	sql = "INSERT INTO guia (label, comment, audio, image, map) VALUES ('Eines per conrear','Las Eines per conrear','eines.jpg' , 'eines.mp3', 'planoleines.jpg')";
+	sql = "INSERT INTO guia (label, comment, image, audio, map) VALUES ('Eines per conrear','Las Eines per conrear','eines.jpg' , 'eines.mp3', 'planoleines.jpg')";
 	console.log(sql);
 	tx.executeSql(sql);
 };

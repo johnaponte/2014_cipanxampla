@@ -1,53 +1,72 @@
 body {
-  font-size: 20px; 
+	font-size: 120%;
 }
 
 #home {
-	width:100%;
-	 margin:0;
+	width: 100%;
+	margin: 0;
 }
 
-
 #divimgmuseu {
-    text-align: center; /* center the image */
+	text-align: center; /* center the image */
 }
 
 #imgmuseu {
-    display: inline-block;  /* treat the img like text */
-    max-width: 250px; /*resolution of the img*/
-    width: 80%; /* shrink to 10% if lower than 60px */
-    margin: 0.3em auto;  /* add space between top and bottom edge of container */
+	display: inline-block; /* treat the img like text */
+	max-width: 250px; /*resolution of the img*/
+	width: 80%; /* shrink to 10% if lower than 60px */
+	margin: 0.3em auto; /* add space between top and bottom edge of container */
 }
 
 #divimgconstruccion {
-    text-align: center; /* center the image */
+	text-align: center; /* center the image */
 }
 
 #imgconstruccion {
-    display: inline-block;  /* treat the img like text */
-    max-width: 250px; /*resolution of the img*/
-    width: 80%; /* shrink to 10% if lower than 60px */
-    margin: 0.3em auto;  /* add space between top and bottom edge of container */
+	display: inline-block; /* treat the img like text */
+	max-width: 250px; /*resolution of the img*/
+	width: 80%; /* shrink to 10% if lower than 60px */
+	margin: 0.3em auto; /* add space between top and bottom edge of container */
 }
 
 #imgguia {
-    display: inline-block;  /* treat the img like text */
-    max-width: 350px; /*resolution of the img*/
-    width: 90%; /* shrink to 10% if lower than 60px */
-    margin: 0.3em auto;  /* add space between top and bottom edge of container */	
+	display: inline-block; /* treat the img like text */
+	max-width: 350px; /*resolution of the img*/
+	width: 90%; /* shrink to 10% if lower than 60px */
+	margin: 0.3em auto; /* add space between top and bottom edge of container */
 }
 
 #divimgguia {
-    text-align: center; /* center the image */
+	text-align: center; /* center the image */
 }
 
 #imgmap {
-    display: inline-block;  /* treat the img like text */
-    max-width: 350px; /*resolution of the img*/
-    width: 90%; /* shrink to 10% if lower than 60px */
-    margin: 0.3em auto;  /* add space between top and bottom edge of container */	
+	display: inline-block; /* treat the img like text */
+	max-width: 350px; /*resolution of the img*/
+	width: 90%; /* shrink to 10% if lower than 60px */
+	margin: 0.3em auto; /* add space between top and bottom edge of container */
 }
 
 #divimgmap {
-    text-align: center; /* center the image */
+	text-align: center; /* center the image */
+}
+
+div#ubication {
+	height: 100%;
+	width: 100%;
+}
+
+div#map_content {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+
+div#map_canvas {
+	height: 85%;
+	width: 85%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin: auto;
 }

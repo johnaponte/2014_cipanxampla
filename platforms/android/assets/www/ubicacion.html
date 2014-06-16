@@ -3,38 +3,40 @@
 
 	<head>
 		<title>Centre d'Interpretació de Panxampla</title>
+
 		<meta charset="utf-8" />
 		<meta name="format-detection" content="telephone=no" />
 		<!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-		<link rel="stylesheet" href="css/cipanxampla.css">
+
 		<link rel="stylesheet" href="libs/jquery.mobile-1.4.2.min.css">
+		<link rel="stylesheet" href="css/cipanxampla.css">
+
 		<script src="libs/jquery-1.10.2.min.js"></script>
 		<script src="libs/jquery.mobile-1.4.2.js"></script>
+		<script src="cordova.js"></script>
+        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD-e10jec1jGjM_oB8_cQm_ag8LWxyLmZ4&sensor=true"></script>
 	</head>
-
 	<body>
+		<div id="ubication" data-role="page" >
 
-		<!-- Page for dialog agenda -->
-		<div data-role="page"  id="detail">
 			<div data-role="header">
-					<a href="agenda.html" target="#agenda" data-icon="home" class="ui-btn-left">Tornar</a>
-					<h1>Agenda</h1>
+				<a href="index.html" target="#home" data-icon="home" class="ui-btn-left">Tornar</a>
+				<h1>Localització</h1>
 			</div>
-
-			<div data-role="main" class="ui-content">
-				<p id="agendaTitle">Title</p>
-				<span id="agendaDetail">
-					
-				</span>
-				<a href="agenda.html" target="#agenda">Volver a la agenda</a>
-			</div>
-		</div><!-- fin Exposicio-->
-
-
+			<div data-role="main" class="ui-content" id="map_content">
+				<div id="map_canvas">
+                <!-- map loads here... -->
+				</div>
+				<p align="center">Alfara de Carles (Baix Ebre)</p>
+			</div><!--main-->
+		</div><!--ubication-->
+		
 		<!--page code -->
-		<script src="js/agendaDetail.js"></script>
+		<script src="js/ubicacion.js"></script>
 
 	</body>
 </html>
+
+
 

@@ -1,9 +1,14 @@
 // Javascrypt for home
+console.log("** js/home.js");
+
 var db;
 var dbVersion;
 var dbCurrentVersion = 1;
 
-document.addEventListener("deviceready", onDeviceReadyHome, false);
+$(document).ready(function() {
+	console.log("** DocumentReady HOME");
+	document.addEventListener("deviceready", onDeviceReadyHome, false);
+});
 
 // device APIs are available
 function onDeviceReadyHome() {
@@ -12,12 +17,17 @@ function onDeviceReadyHome() {
 	navigator.splashscreen.hide();
 	db = window.openDatabase("panxamplaDB", "1.0", "CI Panxampla", 200000);
 	// Get the version number saved in the database. if not equal populate again
-		db.transaction(getVersion, transaction_error, afterGetVersion);
+	db.transaction(getVersion, transaction_error, afterGetVersion);
 };
 
 function transaction_error(tx, error) {
-	alert("Database Error: " + error);
-}
+	alert("Database Error: Tables not defined? " + error);
+	db.transaction(populateDB, transaction_error2, populateDB_success);
+};
+
+function transaction_error2(tx, error) {
+	alert("Database Error: + error" + error);
+};
 
 function afterGetVersion(){
 	console.log("** afterGetVesrion of dbVersion and dbCurrentVersion: "+dbVersion+", "+ dbCurrentVersion);
@@ -25,14 +35,13 @@ function afterGetVersion(){
 		console.log("** Database already created");
 	} else {
 		console.log("** Database need to be created and populated");
-		db.transaction(populateDB, transaction_error, populateDB_success);
+		db.transaction(populateDB, transaction_error2, populateDB_success);
 	}
 	
 };
 
 function populateDB_success() {
 	console.log("** Database populate success");
-	dbCreated = true;
 };
 
 function populateDB(tx) {

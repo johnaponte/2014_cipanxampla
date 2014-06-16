@@ -1,12 +1,12 @@
 // Javascript for the agendaDetails page
 var db;
-var id = getUrlVars()["id"];
-var from = getUrlVars()["from"];
+var id;
+var from;
 var srcAudio = "";
 var platform;
 
 $(document).ready(function() {
-	console.log("** DocumentReady")
+	console.log("** DocumentReady");
 	document.addEventListener("deviceready", onDevicereadyGuiaDetail, false);
 });
 
@@ -26,15 +26,17 @@ function transactionError(tx, error) {
 };
 
 function getGuiaDetail(tx) {
-	console.log("** In getGuiaDetail");
+	id = getUrlVars()["id"];
+	console.log("** In getGuiaDetail with id: " +id);
 	var sql = "select e.id, e.label, e.comment, e.audio, e.image, e.map from guia e where e.id=:id";
 	tx.executeSql(sql, [id], getGuiaDetailSuccess);
 };
 
 function getGuiaDetailSuccess(tx, results) {
 	console.log("** In getGuiaDetailSucess");
-	var guiaDetail = results.rows.item(0);
+	from = getUrlVars()["from"];
 	if (from == "audioguia") {
+		console.log("Setup tornar in audioguia");
 		$("#volverButton").attr({
 			href : "audioguia.html",
 			target : "#audioguia"
@@ -45,6 +47,19 @@ function getGuiaDetailSuccess(tx, results) {
 		});
 		$("#volverLink").html("Volver a la audioguia");
 	}
+	else {
+		console.log("Setup tornar in scan");
+		$("#volverButton").attr({
+			href : "scan.html",
+			target : "#scan"
+		});
+		$("#volverLink").attr({
+			href : "scan.html",
+			target : "#scan"
+		});
+		$("#volverLink").html("Volver a scanear");
+	}
+	var guiaDetail = results.rows.item(0);
 	console.log("****************************************");
 	console.log("**** guiaDetail.audio:" + guiaDetail.audio);
 	console.log("**** guiaDetail.image:" + guiaDetail.image);
